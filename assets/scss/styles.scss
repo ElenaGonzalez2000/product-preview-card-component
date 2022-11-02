@@ -114,10 +114,7 @@ html {
 
             a {
                 text-decoration: none;
-
-                &:hover {
-                    color: black;
-                }
+                color: $Darkcyan;
             }
         }
     }
