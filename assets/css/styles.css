@@ -73,6 +73,7 @@ html {
     html .main .attribution {
       position: absolute;
       bottom: 0.5rem;
+      margin: 0rem 0.5rem;
       font-size: 0.8rem;
       text-align: center; }
       html .main .attribution a {
