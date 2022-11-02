@@ -1,0 +1,156 @@
+@import "variables";
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.fontSecondary {
+    font-family: 'Fraunces', serif;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+
+    .main {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $Cream;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 19rem;
+            background-color: $White;
+            border-radius: 1rem;
+            box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+            transition: .3s;
+
+            &:hover {
+                box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+            }
+
+            .container_img {
+                .container_img_mobile {
+                    width: 100%;
+                    border-radius: 0.5rem 0.5rem 0rem 0rem;
+                }
+            }
+
+            .container_contents {
+                padding: 1.5rem;
+
+                .container__contents_text {
+                    span {
+                        font-size: 0.7rem;
+                        letter-spacing: 0.2rem;
+                        color: $Darkgrayishblue;
+                    }
+
+                    h1 {
+                        font-size: 1.8rem;
+                        padding: 1rem 0rem;
+                        color: $Verydarkblue;
+                    }
+
+                    p {
+                        font-size: 0.9rem;
+                        padding-bottom: 0.5rem;
+                        color: $Darkgrayishblue;
+                    }
+                }
+
+                .container_price {
+                    display: flex;
+                    align-items: center;
+                    padding: 0.5rem 0rem;
+
+                    h2 {
+                        font-size: 1.7rem;
+                        color: $Darkcyan;
+                        padding-right: 1rem;
+                    }
+
+                    span {
+                        color: $Darkgrayishblue;
+                        text-decoration: line-through;
+                    }
+                }
+
+                .container_btn {
+                    display: flex;
+                    padding: 1rem;
+                    margin-top: 0.5rem;
+                    justify-content: center;
+                    width: -webkit-fill-available;
+                    background-color: $Darkcyan;
+                    border-radius: 0.5rem;
+                    border: none;
+                    color: $White;
+                    cursor: pointer;
+                    font-family: 'Montserrat', sans-serif;
+                    transition: .3s;
+
+                    &:hover {
+                        background-color: rgb(26, 64, 49);
+                    }
+
+                    img {
+                        padding-right: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        .attribution {
+            position: absolute;
+            bottom: 0.5rem;
+            text-align: center;
+            font-size: 0.9rem;
+            padding-bottom: 0.5rem;
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        .main {
+            .container {
+                flex-direction: row;
+                width: 35rem;
+                height: 24rem;
+
+                .container_img {
+                    width: 50%;
+                    background-image: url(../images/image-product-desktop.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 0.5rem 0rem 0rem 0.5rem;
+
+                    .container_img_mobile {
+                        display: none;
+                    }
+                }
+
+                .container_contents {
+                    display: flex;
+                    width: 50%;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 0rem;
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+}
