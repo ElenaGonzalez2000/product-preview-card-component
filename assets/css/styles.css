@@ -71,10 +71,10 @@ html {
           html .main .container .container_contents .container_btn img {
             padding-right: 0.5rem; }
     html .main .attribution {
-      text-align: center;
+      position: absolute;
+      bottom: 0.5rem;
       font-size: 0.8rem;
-      margin: 0rem 0.5rem;
-      padding-bottom: 0.5rem; }
+      text-align: center; }
       html .main .attribution a {
         text-decoration: none;
         color: #3c8067; }
